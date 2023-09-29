@@ -1,12 +1,12 @@
-const users = [
+const products = [
     {
-        name: "Rakib Enam",
-        age: 26
+        name: "laptop",
+        price: 1200,
     },
     {
-        name : "Sufia Begum",
-        age : 47
-    }
-]
+        name : "Smart Phone",
+        price : 1000,
+    },
+];
 
-module.exports = users;
+module.exports = products;

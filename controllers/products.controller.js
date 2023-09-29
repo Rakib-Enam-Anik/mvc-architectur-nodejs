@@ -1,24 +1,24 @@
-const path = require("path")
+const path = require("path");
 
 const products = require("../models/products.model");
 
 
 
 exports.getProducts = (req, res) => {
-    res.sendFile(path.join(__dirname + "/../views/index.html"));
+    res.sendFile(path.join(__dirname + "/../views/product.html"));
 };
 
 exports.saveProducts =  (req,res) => {
     const name = req.body.name;
-    const age = Number(req.body.age);
-    const user = {
+    const price = Number(req.body.price);
+    const product = {
         name,
-        age,
+        price,
     };
 
-    users.push(user);
+    products.push(product);
     res.status(201).json({
         success: true,
-        users,
+        products,
     });
 };
